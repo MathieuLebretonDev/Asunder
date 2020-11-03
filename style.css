@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Barlow";
+    src: url(/AsunderPierres/assets/Barlow-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: "BarlowLight";
+    src: url(/AsunderPierres/assets/Barlow-Thin.ttf);
+}
+
+/* NAVIGATION BAR */
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding: 20px 20px 20px 20px;
+    border-bottom: 3px solid rgb(67, 112, 172);
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Barlow', sans-serif;
+    letter-spacing: 3px;
+    font-size: 45px;
+}
+
+nav p {
+    font-family: 'BarlowLight', sans-serif;
+    letter-spacing: 3px;
+    font-size: 25px;
+}
+
+/* INTRODUCTION */
+
+#intro {
+    background: url(https://images.squarespace-cdn.com/content/v1/571a9e5c8259b5e9df5c8247/1568221064097-8YSOEYDBIROLL5JIRG36/ke17ZwdGBToddI8pDm48kJfQhzfy_faWLqobUkarsaZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UaaCX3OmKa1bFASAPnfuBkrJeubkVEihP1GWLl6asIWO5ZDY0T-p06t_UPDfRIC1dA/burnies-rocks-brava-blue-sunny-frantz.jpg?format=2500w) no-repeat center / cover;
+    height: 800px;
+}
+
+.intro_txt {
+    margin: 0 auto;
+    padding-top: 15%;
+    width: 50%;
+}
+
+h2 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+
+.intro_txt p {
+    font-family: sans-serif; /* A CHANGER, POLICE + FINE */
+    font-size: 14px;
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    color: white;
+}
+
+/*BOUTON*/
+
+.intro_txt .button_stone {
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 250px;
+    text-decoration: none;
+    padding: 5px;
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    color: white;
+}
+
+@keyframes colorlink {
+    100% {
+    border: 2px solid rgb(230, 210, 210);
+    letter-spacing: 3px;
+    color: rgb(230, 210, 210);
+    }
+}
+
+.intro_txt .button_stone:hover {
+    animation: colorlink 1s forwards;
+}
+
+/*ASTROLOGY BANNER*/
+
+#astrology {
+    width: 75%;
+    margin: 0 auto;
+}
+
+#astrology img {
+    width:40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#astrology h2 {
+    color:black;
+    padding-top: 30px;
+}
+
+.astrology {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 50px;
+    width: 50%;
+}
+
+.Uranus, .Neptune, .Mars, .Venus, .Mercure, .Lune, .Soleil, .Terre, .Phobos, .Platon, .Jupiter, .Saturne {
+    width: 16%;
+    padding-bottom: 30px;
+}
+
+h3 {
+    font-family: 'BarlowLight';
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+#astrology p {
+    font-family: 'BarlowLight';
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+@keyframes astrology {
+    100% {
+    letter-spacing: 3px;
+    color: rgb(255, 208, 0);
+    }
+}
+
+h3:hover {
+    animation: astrology 1s forwards;
+}
+
+/*TABLEAU DES PIERRES*/
+
+.stone_table {
+    background: pink;
+    border-radius: 3px;
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+#stone_table .stones { 
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    width:200px;
+}
+
+#stone_table p {
+    /*à déterminer*/
+}
+
+h4 {
+    /*à déterminer*/
+}
+
