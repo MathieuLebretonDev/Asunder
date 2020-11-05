@@ -6,6 +6,10 @@
     text-decoration: none;
 }
 
+body {
+    background-image: url(https://2img.net/thumbs.gfycat.com/ComfortableOrganicAmericanindianhorse-small.gif);
+}
+
 @font-face {
     font-family: "Barlow";
     src: url(/assets/Barlow-ExtraLight.ttf);
@@ -23,30 +27,47 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: #f1e2e2;
-    color: #bf7a7a;
-    padding: 20px 20px 20px 20px;
-    border-bottom: 3px solid #bf7a7a;
+    background-color: black;
+    color: #dfc793;
+    border-bottom: 3px solid #dfc793;
     text-align: center;
 }
 
 h1 {
-    font-family: 'Barlow', sans-serif;
-    letter-spacing: 3px;
-    font-size: 45px;
+    font-family: 'Edition';
+    font-size: 30px;
+    padding: 10px 0 10px 0;
+    letter-spacing: 5px;
+    color: #dfc793;
 }
+
+@keyframes navasunder {
+    100% {
+        letter-spacing: 15px;
+    }
+}
+
+h1:hover {
+    animation: navasunder 2s forwards;
+}
+
+/*SLOGAN SI AJOUTÉ
 
 nav p {
     font-family: 'BarlowLight', sans-serif;
-    letter-spacing: 3px;
-    font-size: 25px;
+    letter-spacing: 2px;
+    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
+
+SLOGAN SI AJOUTÉ*/
 
 /* INTRODUCTION */
 
 #intro {
-    background: url(/images/burnies-rocks-brava-blue-sunny-frantz.jpg) no-repeat center / cover;
-    height: 800px;
+    background: url(/images/header8.jpg) no-repeat center / cover;
+    height: 880px;
 }
 
 .intro_txt {
@@ -73,28 +94,40 @@ h2 {
 
 /*BOUTON*/
 
-.intro_txt .button_stone {
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.intro_txt .find_stone, .more_stone {
     border: 2px solid white;
     border-radius: 5px;
-    width: 250px;
+    width: 180px;
     text-decoration: none;
     padding: 5px;
     font-family: 'Barlow', sans-serif;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
     margin: 0 auto;
     color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.more_stone {
+    background-color: #dfc793;
+    border: 2px solid #dfc793;
 }
 
 @keyframes colorlink {
     100% {
-    border: 2px solid #bf7a7a;
+    border: 2px solid #dfc793;
     letter-spacing: 3px;
-    color: #bf7a7a;
+    color: #dfc793;
     }
 }
 
-.intro_txt .button_stone:hover {
+.intro_txt .find_stone:hover {
     animation: colorlink 1s forwards;
 }
 
@@ -106,21 +139,21 @@ h2 {
 }
 
 #astrology img {
-    width:40px;
+    width:120px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 .planet {
-    width:60px;
+    width:90px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 #astrology h2 {
-    color:black;
+    color:white;
     padding-top: 50px;
     letter-spacing: 1px;
 }
@@ -144,6 +177,7 @@ h3 {
     text-align: center;
     text-transform: uppercase;
     font-size: 13px;
+    color: white;
 }
 
 #astrology p {
@@ -151,12 +185,14 @@ h3 {
     text-align: center;
     text-transform: uppercase;
     font-size: 11px;
+    color: white;
+    padding-bottom: 20px;
 }
 
 @keyframes astrology {
     100% {
     letter-spacing: 3px;
-    color: #bf7a7a;
+    color: #dfc793;
     }
 }
 
@@ -167,17 +203,17 @@ h3:hover {
 /*TABLEAU DES PIERRES*/
 
 .stone_table {
-    background: #f1e2e2;
-    border-radius: 4px;
+    background: black;
     margin: 0 auto;
     width: 50%;
     display: flex;
     justify-content: space-between;
-    margin-top: 5px;
+    margin-top: 0px;
+    border: 1px solid #dfc793;
 }
 
 #stone_table .stones { 
-    padding: 20px 20px 20px 20px;
+    padding-top: 27px;
     text-align: center;
     width:200px;
 }
@@ -186,7 +222,7 @@ h3:hover {
     padding: 20px 20px 20px 20px;
     text-align: center;
     width:200px;
-    outline: 4px solid white;
+    outline: 1px solid #dfc793;
 }
 
 #stone_table p {
@@ -194,6 +230,7 @@ h3:hover {
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 1px;
+    color: white;
 }
 
 h4 {
@@ -202,7 +239,7 @@ h4 {
     letter-spacing: 3px;
     font-size: 11px;
     padding-top: 10px;
-    color: #bf7a7a;
+    color: #dfc793;
 }
 
 .img_stones {
@@ -211,7 +248,7 @@ h4 {
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
-    border: 3px solid #d8aeae;
+    border: 3px solid #dfc793;
     opacity: 50%;
 }
 
@@ -224,3 +261,6 @@ h4 {
 .img_stones:hover {
     animation: imgstones 1s forwards;
 }
+
+/*Test Hover*/
+
