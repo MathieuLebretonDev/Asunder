@@ -262,5 +262,39 @@ h4 {
     animation: imgstones 1s forwards;
 }
 
-/*Test Hover*/
+/*DISCLAIMER*/
 
+#foot {
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 50px;
+}
+
+.disclaimer {
+    font-family: 'BarlowLight';
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: rgb(201, 193, 193);
+    padding-bottom: 50px;
+}
+
+.disclaimer p2 {
+    color: #dfc793;
+}
+
+.disclaimer a {
+    color: rgb(201, 193, 193);
+}
+
+@keyframes backforum {
+    100% {
+    letter-spacing: 5px;
+    color: #dfc793;
+    }
+}
+
+.disclaimer a:hover {
+    animation: backforum 1s forwards;
+}
